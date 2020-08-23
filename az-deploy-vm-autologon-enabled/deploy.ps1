@@ -1,10 +1,10 @@
 $location = "eastus"
-$resourceGroupName = "oc-test-vm-deployment009"
+$resourceGroupName = "oc-test-vm-deployment2"
 
 $resourceGroup = New-AzResourceGroup -Name $resourceGroupName -Location $location;
 
-$templateFile = "C:\Users\Yadian\Downloads\template\template.json";
-$parametersFile= "C:\Users\Yadian\Downloads\template\parameters.json";
+$templateFile = ".\template.json";
+$parametersFile= ".\parameters.json";
 
 New-AzResourceGroupDeployment `
   -Name "testDeployment" `
